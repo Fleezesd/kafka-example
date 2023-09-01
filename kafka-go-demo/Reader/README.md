@@ -1,0 +1,3 @@
+- A Reader is another concept exposed by the kafka-go package, which intends to make it simpler to implement the typical use case of consuming from a single topic-partition pair. A Reader also automatically handles reconnections and offset management, and exposes an API that supports asynchronous cancellations and timeouts using Go contexts.
+- Reader 是 kafka-go 包公开的另一个概念，它旨在更简单地实现从单个主题分区对进行消费的典型用例。 单topic partition 指定好
+- Reader 还自动处理重新连接和偏移管理，并公开一个支持使用 Go 上下文的异步取消和超时的 API.
