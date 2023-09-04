@@ -19,7 +19,7 @@
 # v2 kafka-go client端学习
 - 目前完成基本produce，topic consume 测试 
 - Reader 简易test
-- Write 建设学习中
+- Writer 建设学习中
 
 - 整体使用起来
   - 优点
@@ -27,3 +27,19 @@
     上手轻松， 以dial直接连通远端broker做操作
     主要是写代码方便很多 不用过于思考底层的kafka的过多原理 但凡事有利有弊 酌情处理 比较看好
     因代码不过于复杂 多人开发时还是比较易维护 若不是过分需求性能的话，个人推荐kafka-go
+
+
+# v3 kafka-go reader writer SASL认证 logging
+- reader
+  - simple reader
+  - consumer groups   consumer组
+  - explicit commits 详述message 
+  - managing commits  定期处理commits 即定时刷新commit 保证kafka的offset
+- writer
+  - simple writer
+  - AutoTopicCreation 自动创建topic
+  - Writing to multiple topics 写入多个topic
+  - Compression writer压缩
+- TLS
+- SASL
+- logging
